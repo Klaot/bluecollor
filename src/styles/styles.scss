@@ -473,6 +473,7 @@ $colorH4: #1C2752;
   background: #F4F4F4;
   padding-top: 240px;
   margin-top: -110px;
+  padding-bottom: 120px;
 
   .our-services-info {
     display: flex;
@@ -509,7 +510,7 @@ $colorH4: #1C2752;
     justify-content: center;
     
     .our-services-item {
-      max-width: 350px;
+      max-width: 300px;
       background-color: #1C2752;
       padding: 50px 35px;
       margin-bottom: 30px;
@@ -536,3 +537,95 @@ $colorH4: #1C2752;
 .our-services-all div:nth-child(2) {
   margin-inline: 30px;
 }
+
+// Why Choose Us
+
+.why-choose-us-minilogo {
+  @include minilogos()
+}
+
+.why-choose-us {
+  display: flex;
+
+  .why-choose-us-bg {
+    background-image: url('../image/whychooseusimg.jpg');
+    background-repeat: no-repeat;
+    padding: 140px 80px;
+    
+    .why-choose-us-table {
+      background: rgba(28, 39, 82, 0.86);
+      padding: 99px 80px 89px 80px;
+    }
+    .why-choose-us-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+    }
+
+    .why-choose-us-item-p {
+      text-align: center;
+      font-size: 24px;
+      line-height: 35px;
+      display: block;
+      width: 130px;
+      margin: 0;
+      background-color: #FFB342;
+      padding-block: 20px;
+      
+    }
+    .why-choose-us-item-p2 {
+      width: 290px;
+      margin-block: 0;
+      font-size: 25px;
+      line-height: 35px;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #fff;
+      padding-block: 18.7px;
+      p {
+        margin-block: 0;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .why-choose-us-info {
+    padding: 70px 70px;
+
+    h1 {
+      color: $colorH4;
+      font-size: 45px;
+      line-height: 58px;
+    }
+    .why-choose-us-info-p {
+      font-size: 17px;
+      line-height: 27px;
+      color: $colorP;
+      margin-bottom: 37px;
+    }
+
+    .why-choose-us-info-item {
+      display: flex;
+      margin-bottom: 25px;
+      h4 {
+        margin-top: 3px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        line-height: 28px;
+        color: $colorH4;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 27px;
+        color: #7E7E7E;
+      }
+    }
+  }
+}
+

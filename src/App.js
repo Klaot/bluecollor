@@ -4,6 +4,7 @@ import Header from './components/Header.js';
 import Navigation from './components/Navigation.js';
 import OurServices from './components/OurServices.js';
 import WhatWeOffer from './components/WhatWeOffer.js';
+import WhyChooseUs from './components/WhyChooseUs.js';
 import './styles/styles.scss';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <AboutUs/>
         <WhatWeOffer/>
         <OurServices/>
+        <WhyChooseUs/>
     </div>
   );
 }
