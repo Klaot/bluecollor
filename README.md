@@ -1,2 +1,2 @@
 # site BlueCollor
-### https://bluecollor-lnuhiieqh-klaot.vercel.app/
+### https://bluecollor.vercel.app/
