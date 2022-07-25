@@ -485,6 +485,8 @@ $colorH4: #1C2752;
       color: $colorH4;
       margin-top: 22px;
       margin-bottom: 12px;
+      font-size: 45px;
+      line-height: 58px;
     }
     p {
       color: $colorP;
@@ -550,7 +552,7 @@ $colorH4: #1C2752;
   .why-choose-us-bg {
     background-image: url('../image/whychooseusimg.jpg');
     background-repeat: no-repeat;
-    padding: 140px 80px;
+    padding: 100px 80px;
     
     .why-choose-us-table {
       background: rgba(28, 39, 82, 0.86);
@@ -591,7 +593,7 @@ $colorH4: #1C2752;
   }
 
   .why-choose-us-info {
-    padding: 70px 70px;
+    padding: 50px 70px;
 
     h1 {
       color: $colorH4;
@@ -607,7 +609,7 @@ $colorH4: #1C2752;
 
     .why-choose-us-info-item {
       display: flex;
-      margin-bottom: 25px;
+      // margin-bottom: 25px;
       h4 {
         margin-top: 3px;
         margin-bottom: 0px;
@@ -629,3 +631,26 @@ $colorH4: #1C2752;
   }
 }
 
+// Gallery
+
+.gallery {
+  background: $colorH4;
+  padding-top: 150px;
+  
+  .gallery-minilogo {
+  @include minilogos();
+  padding-inline: 15px;
+  }
+  .gallery-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 45px;
+    line-height: 58px;
+  }
+}
