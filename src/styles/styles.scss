@@ -635,6 +635,7 @@ $colorH4: #1C2752;
 
 .gallery {
   background: $colorH4;
+  padding-bottom: 150px;
   padding-top: 150px;
   
   .gallery-minilogo {
@@ -647,10 +648,37 @@ $colorH4: #1C2752;
     justify-content: center;
     align-items: center;
   }
-
   h1 {
     color: #fff;
     font-size: 45px;
     line-height: 58px;
+  }
+
+  .gallery-cards {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 49px;
+
+    .gallery-cards-item {
+      padding: 20px;
+      background-color: #fff;
+      text-align: center;
+
+      img {
+        width: 257px;
+      }
+      h2 {
+        font-size: 25px;
+        line-height: 38px;
+        color: $colorH4;
+      }
+      p {
+        color: $colorP;
+        font-size: 17px;
+        line-height: 27px;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
   }
 }
