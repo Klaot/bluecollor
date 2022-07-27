@@ -1,5 +1,6 @@
 import React from 'react';
 import AboutUs from './components/AboutUs.js';
+import Testimonial from './components/Feedback/Testimonial.js';
 import Header from './components/Header.js';
 import Navigation from './components/Navigation.js';
 import OurServices from './components/OurServices.js';
@@ -18,6 +19,7 @@ function App() {
         <OurServices/>
         <WhyChooseUs/>
         <TheGallery/>
+        <Testimonial/>
     </div>
   );
 }
