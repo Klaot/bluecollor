@@ -1,9 +1,11 @@
 import React from 'react';
 import AboutUs from './components/AboutUs.js';
+import Clients from './components/Clients.js';
 import Testimonial from './components/Feedback/Testimonial.js';
 import Header from './components/Header.js';
 import Navigation from './components/Navigation.js';
 import OurServices from './components/OurServices.js';
+import PricePlan from './components/PricePlan.js';
 import TheGallery from './components/TheGallery.js';
 import WhatWeOffer from './components/WhatWeOffer.js';
 import WhyChooseUs from './components/WhyChooseUs.js';
@@ -20,6 +22,8 @@ function App() {
         <WhyChooseUs/>
         <TheGallery/>
         <Testimonial/>
+        <Clients/>
+        <PricePlan/>
     </div>
   );
 }

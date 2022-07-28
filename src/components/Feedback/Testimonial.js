@@ -18,7 +18,6 @@ const Testimonial = () => {
             <div>
                 <MeetUs/>
             </div>
-
         </div>
     )
 };
