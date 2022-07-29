@@ -6,6 +6,7 @@ import Header from './components/Header.js';
 import Navigation from './components/Navigation.js';
 import OurServices from './components/OurServices.js';
 import PricePlan from './components/PricePlan.js';
+import StayUpdated from './components/StayUpdated.js';
 import TheGallery from './components/TheGallery.js';
 import WhatWeOffer from './components/WhatWeOffer.js';
 import WhyChooseUs from './components/WhyChooseUs.js';
@@ -24,6 +25,7 @@ function App() {
         <Testimonial/>
         <Clients/>
         <PricePlan/>
+        <StayUpdated/>
     </div>
   );
 }
