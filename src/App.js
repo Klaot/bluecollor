@@ -7,6 +7,7 @@ import Navigation from './components/Navigation.js';
 import OurServices from './components/OurServices.js';
 import PricePlan from './components/PricePlan.js';
 import StayUpdated from './components/StayUpdated.js';
+import Subscribe from './components/Subscribe.js';
 import TheGallery from './components/TheGallery.js';
 import WhatWeOffer from './components/WhatWeOffer.js';
 import WhyChooseUs from './components/WhyChooseUs.js';
@@ -26,6 +27,7 @@ function App() {
         <Clients/>
         <PricePlan/>
         <StayUpdated/>
+        <Subscribe/>
     </div>
   );
 }
