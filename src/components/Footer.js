@@ -2,6 +2,10 @@ import LogoFooter from '../image/logofooter.png';
 import MailFooter from '../image/mailfooter.png';
 import PhoneFooter from '../image/phonefooter.png';
 import GpsFooter from '../image/gpsfooter.png';
+import FooterIns from '../image/footerinst.png';
+import Footerface from '../image/footerface.png';
+import FooterTwit from '../image/footertwit.png';
+import FooterPri from '../image/footerpri.png';
 
 const Footer = () => {
     return (
@@ -32,7 +36,46 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div></div>
+            <div className='footer-social-all'>
+                <div className='footer-social'>
+                    <p>We are here to fit the needs of your basic services
+                    for your dream building whether its a commercial, 
+                    residential or industry.</p>
+                    <div className='footer-social-img'>
+                        <img src={FooterIns} alt='FooterIns icon'/>
+                        <img src={Footerface} alt='Footerface icon'/>
+                        <img src={FooterTwit} alt='FooterTwit icon'/>
+                        <img src={FooterPri} alt='FooterPri icon'/>
+                    </div>
+                </div>
+                <div className='footer-links'>
+                    <div className='footer-link'>
+                        <p>Explore</p>
+                        <a href='#'>About Us</a>
+                        <a href='#'>Pricing</a>
+                        <a href='#'>Team</a>
+                        <a href='#'>Blog</a>
+                        <a href='#'>Contact Us</a>
+                    </div>
+                    <div className='footer-link'>
+                        <p>Quick Links</p>
+                        <a href='#'>Home</a>
+                        <a href='#'>Services</a>
+                        <a href='#'>Service Single</a>
+                        <a href='#'>Projects</a>
+                        <a href='#'>Projects Single</a>
+                    </div>
+                    
+                </div> 
+                <div className='footer-link'>
+                        <p>Utility Pages</p>
+                        <a href='#'>Style Guide</a>
+                        <a href='#'>Changelog</a>
+                        <a href='#'>Licenses</a>
+                        <a href='#'>Protected Page</a>
+                        <a href='#'>404 Page</a>
+                </div>   
+            </div>
             <div></div>
         </section>
     )
