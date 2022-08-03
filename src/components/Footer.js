@@ -64,8 +64,7 @@ const Footer = () => {
                         <a href='#'>Service Single</a>
                         <a href='#'>Projects</a>
                         <a href='#'>Projects Single</a>
-                    </div>
-                    
+                    </div>    
                 </div> 
                 <div className='footer-link'>
                         <p>Utility Pages</p>

@@ -1150,6 +1150,7 @@ $colorH4: #1C2752;
 .footer {
   background-color: $colorH4;
   padding: 120px;
+  padding-bottom: 30px;
   padding-top: 60px;
 
   .footer-info-header {
@@ -1204,12 +1205,29 @@ $colorH4: #1C2752;
   }
   .footer-links {
     display: flex;
-    padding-top: 40px;
-    
+    padding-top: 30px;
+  }
+  .footer-link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 50px;
+    word-wrap: normal;
 
-    .footer-link {
-      display: flex;
-      flex-direction: column;
-    }
+    a {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #fff;
+    text-decoration: none;
+  }
+  p {
+    font-size: 20px;
+    line-height: 28px;
+    color: $colorbg;
+  }
+}
+  .footer-link:nth-child(3) {
+    padding-top: 30px;
   }
 }
