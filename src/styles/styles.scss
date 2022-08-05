@@ -244,8 +244,8 @@ $colorH4: #1C2752;
     max-width: 575px;
     padding-inline: 50px 0px;
 
-    .about-au-h2andp {
-      h2 {
+    .about-us-h1andp {
+      h1 {
         color: #1C2752;
         font-size: 45px;
         line-height: 58px;
@@ -318,6 +318,7 @@ $colorH4: #1C2752;
     }
   }
 }
+
 
 // What We Offer
 
@@ -1229,5 +1230,140 @@ $colorH4: #1C2752;
 }
   .footer-link:nth-child(3) {
     padding-top: 30px;
+  }
+}
+
+
+// Aboute us adaptive
+
+@media (max-width: 1124px) {
+
+  .about-us {
+    margin-block: 140px;
+    padding-inline: 10px;
+
+    .about-us-img {
+      max-width: 575px;
+    }
+  
+    .about-us-info {
+      max-width: 575px;
+      padding-inline: 20px 0px;
+  
+      .about-us-h1andp {
+        h1 {
+          margin-top: 12px;
+          color: #1C2752;
+          font-size: 38px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+    .age {
+      padding-inline: 25px;
+      h2 {
+        margin: 0;
+        font-size: 60px;
+        line-height: 88px;
+        color: #FFB342;
+      }
+      p {
+        font-size: 16px;
+        margin-block: 5px;
+      }
+    }
+    .age-info {
+      padding-left: 30px;
+      padding-block: 5px;
+      p {
+        margin-block: 9px;
+        color: $colorP;
+      }
+    }
+  }
+  .about-us-img {
+    img {
+      max-width: 470px;
+    }
+  }
+}
+
+@media (max-width: 984px) {
+
+  .about-us {
+    margin-block: 140px;
+    padding-inline: 10px;
+
+    .minilogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F4F4F4;
+      max-width: 249px;
+      padding-block: 2px;
+      h4 {
+        margin-block: 0;
+        color: #1C2752;
+        font-size: 14px;
+        line-height: 23px;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+    .about-us-img {
+      max-width: 575px;
+    }
+  
+    .about-us-info {
+      max-width: 575px;
+      padding-inline: 20px 0px;
+  
+      .about-us-h1andp {
+        h1 {
+          margin: 0px;
+          color: #1C2752;
+          font-size: 25px;
+        }
+        p {
+          font-size: 14px;
+          margin: 0px;
+        }
+      }
+    }
+    .our-experience {
+      display: flex;
+      align-items: center;
+      margin-top: 0px;
+    }
+    .age {
+      padding-inline: 25px;
+      h2 {
+        margin: 0;
+        font-size: 40px;
+        line-height: 88px;
+        color: #FFB342;
+      }
+      p {
+        font-size: 13px;
+        margin-block: 0px;
+      }
+    }
+    .age-info {
+      padding-left: 30px;
+      padding-block: 5px;
+      p {
+        font-size: 14px;
+        margin-block: 9px;
+        color: $colorP;
+      }
+    }
+  }
+  .about-us-img {
+    img {
+      max-width: 390px;
+    }
   }
 }

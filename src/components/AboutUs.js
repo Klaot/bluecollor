@@ -14,8 +14,8 @@ const AboutUs = () => {
                         <img src={Minilogo} alt='minilogo'/>
                         <h4>Welcome BlueCollar</h4>
                     </div>
-                    <div className='about-au-h2andp'>
-                        <h2>We Provide Your Future</h2>
+                    <div className='about-us-h1andp'>
+                        <h1>We Provide Your Future</h1>
                         <p>Bluecollar Electrical services was established in 2008.
                         We are trusted and reliable electricians who serve customers
                         in the city as well as throughout United States Of America.</p>

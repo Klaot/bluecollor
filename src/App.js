@@ -14,6 +14,7 @@ import WhatWeOffer from './components/WhatWeOffer.js';
 import WhyChooseUs from './components/WhyChooseUs.js';
 import './styles/styles.scss';
 
+
 function App() {
   return (
     <div className="App">
