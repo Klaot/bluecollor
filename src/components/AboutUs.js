@@ -6,7 +6,7 @@ const AboutUs = () => {
     return (
         <section className='container'>
             <div className='about-us'>
-                <div className='about-us-img'>
+                <div className='about-us-img about-us-img-hidden705px'>
                     <img src={AbouteUs} alt='adoutimg'/>
                 </div>
                 <div className='about-us-info'>
@@ -24,17 +24,24 @@ const AboutUs = () => {
                         value our professionalism, work ethic and our competitive prices.</p>
                     </div>
                     <div className='our-experience'>
-                        <div className='age'>
-                            <h2>35</h2>
-                            <p>Years Of <br></br>Experience</p>
+                        <div className='about-us-img about-us-img-show705px'>
+                            <img src={AbouteUs} alt='adoutimg'/>
                         </div>
-                        <div className='age-info'>
-                            <p>- For all your system requirements</p>
-                            <p>- All work undertaken by qualified</p>
-                            <p>- Experienced office staff on hand</p>
-                            <p>- A Full Guarantee On Workmanship</p>
-                            <p>- Properties at a reasonable price</p>
+                        <div className='age-all'>
+                            <div className='age'>
+                                <h2>35</h2>
+                                <p>Years Of <br></br>Experience</p>
+                            </div>
+                            <div className='age-info'>
+                                <p>- For all your system requirements</p>
+                                <p>- All work undertaken by qualified</p>
+                                <p>- Experienced office staff on hand</p>
+                                <p>- A Full Guarantee On Workmanship</p>
+                                <p>- Properties at a reasonable price</p>
+                            </div>
                         </div>
+                       
+
                     </div>
                 </div>
             </div>
