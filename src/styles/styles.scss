@@ -1376,6 +1376,7 @@ $colorH4: #1C2752;
   }
 }
 
+
 @media (max-width: 845px) {
 
   .about-us {
@@ -1464,7 +1465,8 @@ $colorH4: #1C2752;
   }
 }
 
-@media (max-width: 705px) {
+
+@media (max-width: 704px) {
 
   .about-us {
     align-items: stretch;
@@ -1541,6 +1543,265 @@ $colorH4: #1C2752;
   .about-us-img {
     img {
       max-width: 270px;
+    }
+  }
+}
+
+
+@media (max-width: 670px) {
+
+  .about-us {
+    align-items: stretch;
+    margin-block: 140px;
+    padding-inline: 10px;
+
+    .minilogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F4F4F4;
+      max-width: 249px;
+      padding-block: 2px;
+      h4 {
+        margin-block: 0;
+        color: #1C2752;
+        font-size: 14px;
+        line-height: 23px;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+    .about-us-img {
+      max-width: 575px;
+    }
+  
+    .about-us-info {
+      padding-inline: 0px 0px;
+  
+      .about-us-h1andp {
+        h1 {
+          margin: 0px;
+          color: #1C2752;
+          font-size: 25px;
+        }
+        p {
+          font-size: 14px;
+          margin: 0px;
+        }
+      }
+    }
+    .our-experience {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .age-all {
+      display: block;
+      margin-left: 15px;
+    }
+    .age {
+      padding-inline: 25px;
+      h2 {
+        margin: 0;
+        font-size: 40px;
+        line-height: 88px;
+        color: #FFB342;
+      }
+      p {
+        font-size: 13px;
+        margin-block: 0px;
+      }
+    }
+    .age-info {
+      padding-left: 10px;
+      padding-block: 5px;
+      p {
+        font-size: 14px;
+        margin-block: 6px;
+        color: $colorP;
+      }
+    }
+  }
+  .about-us-img {
+    img {
+      max-width: 270px;
+    }
+  }
+}
+
+
+@media (max-width: 551px) {
+
+  .about-us {
+    align-items: stretch;
+    margin-block: 140px;
+    padding-inline: 10px;
+
+    .minilogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F4F4F4;
+      max-width: 249px;
+      padding-block: 2px;
+      h4 {
+        margin-block: 0;
+        color: #1C2752;
+        font-size: 14px;
+        line-height: 23px;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+    .about-us-img {
+      max-width: 575px;
+    }
+  
+    .about-us-info {
+      padding-inline: 0px 0px;
+  
+      .about-us-h1andp {
+        h1 {
+          margin: 0px;
+          color: #1C2752;
+          font-size: 25px;
+        }
+        p {
+          font-size: 14px;
+          margin: 0px;
+        }
+      }
+    }
+    .our-experience {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+    }
+    .age-all {
+      display: block;
+      margin-left: 15px;
+    }
+    .age {
+      padding-inline: 25px;
+      h2 {
+        margin: 0;
+        font-size: 40px;
+        line-height: 88px;
+        color: #FFB342;
+      }
+      p {
+        font-size: 13px;
+        margin-block: 0px;
+      }
+    }
+    .age-info {
+      padding-left: 10px;
+      padding-block: 5px;
+      p {
+        font-size: 13px;
+        margin-block: 6px;
+        color: $colorP;
+      }
+    }
+  }
+  .about-us-img {
+    img {
+      max-width: 250px;
+    }
+  }
+}
+
+
+@media (max-width: 525px) {
+
+  .about-us {
+    align-items: stretch;
+    margin-block: 140px;
+    padding-inline: 10px;
+
+    .minilogo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F4F4F4;
+      max-width: 249px;
+      padding-block: 2px;
+      h4 {
+        margin-block: 0;
+        color: #1C2752;
+        font-size: 14px;
+        line-height: 23px;
+      }
+      img {
+        margin-right: 10px;
+      }
+    }
+    .about-us-img {
+      max-width: 575px;
+    }
+  
+    .about-us-info {
+      padding-inline: 0px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      .about-us-h1andp {
+        h1 {
+          margin: 0px;
+          color: #1C2752;
+          font-size: 25px;
+        }
+        p {
+          font-size: 14px;
+          margin: 0px;
+        }
+      }
+    }
+    .our-experience {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+
+      .age-all {
+        display: flex;
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+    }
+    
+    .age {
+      padding-inline: 25px;
+      h2 {
+        margin: 0;
+        font-size: 50px;
+        line-height: 88px;
+        color: #FFB342;
+      }
+      p {
+        font-size: 13px;
+        margin-block: 0px;
+      }
+    }
+    .age-info {
+      padding-left: 10px;
+      padding-block: 5px;
+      p {
+        font-size: 13px;
+        margin-block: 6px;
+        color: $colorP;
+      }
+    }
+  }
+  .about-us-img {
+    img {
+      max-width: 350px;
     }
   }
 }
