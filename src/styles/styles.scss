@@ -369,6 +369,7 @@ $colorH4: #1C2752;
     line-height: 30px;
     cursor: pointer;
     
+    
     img {
       width: 36px;
       height: 36px;
@@ -378,6 +379,7 @@ $colorH4: #1C2752;
       margin: 0;
     }
   }
+
 
   .residential-btn {
     border: none;
@@ -419,6 +421,7 @@ $colorH4: #1C2752;
   }
 
   #active-btn {
+    transition: all 0.5s ease-out;
     background: #fff;
   }
 
