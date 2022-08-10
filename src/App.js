@@ -18,11 +18,11 @@ import './styles/styles.scss';
 function App() {
   return (
     <div className="App">
-        {/* <Navigation />
-        <Header /> */}
+        <Navigation />
+        <Header />
         <AboutUs/>
         <WhatWeOffer/>
-        {/* <OurServices/>
+        <OurServices/>
         <WhyChooseUs/>
         <TheGallery/>
         <Testimonial/>
@@ -30,7 +30,7 @@ function App() {
         <PricePlan/>
         <StayUpdated/>
         <Subscribe/>
-        <Footer/> */}
+        <Footer/>
     </div>
   );
 }
