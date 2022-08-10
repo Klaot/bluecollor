@@ -10,9 +10,11 @@ import Industrial from '../image/industrial.png';
 const WhatWeOffer = () => {
 
     const [activeBtn, setActiveBtn] = useState(1)
+    
     let btnActive1 = activeBtn === 1 ? 'active-btn' : '';
     let btnActive2 = activeBtn === 2 ? 'active-btn' : '';
     let btnActive3 = activeBtn === 3 ? 'active-btn' : '';
+
     return (
         <section className='container what-we-offer'>
             <div className='what-we-offer-info'>
@@ -28,7 +30,7 @@ const WhatWeOffer = () => {
             </div>
             <div>
                 <div className='what-we-offer-allBtn'>
-                    <div >
+                    <div>
                         <button className='what-we-offer-Btn' id={btnActive1} onClick={() => setActiveBtn(1)}>
                             <div className='comercial-btn '>
                                 <img src={Comercial} alt='Comercial icon'/>
@@ -54,9 +56,9 @@ const WhatWeOffer = () => {
                     </div>
                 </div>
             </div>
-            {activeBtn === 1 ? <ViewComercial/> : null || 
-            activeBtn === 2 ? <ViewResidential/> : null ||
-            activeBtn === 3 ? <ViewIndustrial/> : null}
+            { activeBtn === 1 ? <ViewComercial/> : null || 
+              activeBtn === 2 ? <ViewResidential/> : null ||
+              activeBtn === 3 ? <ViewIndustrial/> : null }
         </section>
     )
 }
@@ -80,7 +82,7 @@ const ViewResidential = () => {
                 an electrical wholesale shop.</p>
                 <button>Read More</button>
             </div>
-            <div>
+            <div className='what-we-offer__viewImg'>
                 <img src={ComercialImg} alt='ComercialImg'/>
             </div>
         </div>
@@ -104,7 +106,7 @@ const ViewComercial = () => {
                 an electrical wholesale shop.</p>
                 <button>Read More</button>
             </div>
-            <div>
+            <div className='what-we-offer__viewImg'>
                 <img src={ComercialImg} alt='ComercialImg'/>
             </div>
         </div>
@@ -128,7 +130,7 @@ const ViewIndustrial = () => {
                 an electrical wholesale shop.</p>
                 <button>Read More</button>
             </div>
-            <div>
+            <div className='what-we-offer__viewImg'>
                 <img src={ComercialImg} alt='ComercialImg'/>
             </div>
         </div>
