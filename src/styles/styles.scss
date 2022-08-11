@@ -485,6 +485,7 @@ $colorH4: #1C2752;
   padding-top: 240px;
   margin-top: -110px;
   padding-bottom: 120px;
+  padding-inline: 10px;
 
   .our-services-info {
     display: flex;
@@ -518,6 +519,7 @@ $colorH4: #1C2752;
 
   .our-services-all {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -561,9 +563,13 @@ $colorH4: #1C2752;
   display: flex;
 
   .why-choose-us-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-image: url('../image/whychooseusimg.jpg');
     background-repeat: no-repeat;
     padding: 100px 80px;
+    height: 600px;
     
     .why-choose-us-table {
       background: rgba(28, 39, 82, 0.86);
@@ -1244,7 +1250,50 @@ $colorH4: #1C2752;
 }
 
 
-// Aboute us adaptive
+//  adaptive
+@media (max-width: 1300px) { 
+  .why-choose-us {
+
+    .why-choose-us-bg {
+      background-image: url('../image/whychooseusimg.jpg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 100px 50px;
+      
+      .why-choose-us-table {
+        padding: 90px 70px 79px 70px;
+      }
+
+      .why-choose-us-item {
+        .why-choose-us-item-p {
+          font-size: 20px;
+          padding-block: 15px;
+        }
+        .why-choose-us-item-p2 {
+          font-size: 20px;
+          padding-block: 14px;
+        }
+      }
+    }
+    .why-choose-us-info {
+    padding: 50px 30px;
+    h1 {
+      font-size: 35px;
+    }
+    .why-choose-us-info-p {
+      font-size: 16px;
+    }
+  }
+
+  }
+  
+}
+
+@media (max-width: 1159px) { 
+  .our-services-all div:nth-child(2) {
+    margin-inline: 30px 0px;
+  }
+}
 
 @media (max-width: 1124px) {
 
@@ -1298,6 +1347,42 @@ $colorH4: #1C2752;
       max-width: 470px;
     }
   }
+  .why-choose-us {
+   
+    .why-choose-us-bg {
+      background-image: url('../image/whychooseusimg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 0px;
+      
+      
+      .why-choose-us-table {
+        padding: 30px 10px 19px 10px;
+      }
+
+      .why-choose-us-item {
+        .why-choose-us-item-p {
+          font-size: 17px;
+          padding-block: 7px;
+        }
+        .why-choose-us-item-p2 {
+          font-size: 17px;
+          padding-block: 6px;
+        }
+      }
+    }
+    .why-choose-us-info {
+    padding: 50px 30px;
+    h1 {
+      font-size: 35px;
+    }
+    .why-choose-us-info-p {
+      font-size: 16px;
+    }
+  }
+
+  }
+  
 }
 
 @media (max-width: 984px) {
@@ -1376,6 +1461,17 @@ $colorH4: #1C2752;
       max-width: 390px;
     }
   }
+  .why-choose-us {
+    
+    .why-choose-us-info-item {
+      
+    }
+
+    .why-choose-us-table {
+      padding: 60px 40px 49px 40px;
+    }
+  }
+  
 }
 
 
@@ -2134,7 +2230,7 @@ $colorH4: #1C2752;
       background-color: transparent;
       border: 1px solid #1C2752;
       color: #222222;
-      
+
       .comercial-btn {
         border: none;
         display: flex;
@@ -2199,4 +2295,35 @@ $colorH4: #1C2752;
     }
   }
   
+}
+
+@media (max-width: 450px) {
+
+  .our-services-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      color: $colorH4;
+      margin-top: 22px;
+      margin-bottom: 12px;
+      font-size: 30px;
+      line-height: 58px;
+    }
+    p {
+      color: $colorP;
+      margin-bottom: 10px;
+      max-width: 800px;
+      text-align: center;
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 47px;
+    }
+  }
+  .our-services-all div:nth-child(2) {
+    margin-inline: 0px;
+  }
+
 }
