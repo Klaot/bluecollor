@@ -28,7 +28,7 @@ $colorH4: #1C2752;
     max-width: 249px;
     padding-block: 2px;
     h4 {
-      margin-block: 0;
+      margin: 0;
       color: #1C2752;
       font-size: 18px;
       line-height: 27px;
@@ -1384,8 +1384,34 @@ $colorH4: #1C2752;
       font-size: 16px;
     }
   }
-
+}
+.clients {
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  h1 {
+    font-size: 45px;
+    line-height: 58px;
+    color: $colorH4;
   }
+}
+
+.clients-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 150px;
+  img {
+    margin-inline: 40px;
+  }
+  
+}
+
+
   
 }
 
@@ -1500,7 +1526,7 @@ $colorH4: #1C2752;
   }
   .meet-us {
     max-width: 564px;
-    margin-inline: 15px;
+    margin-inline: 0px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -2341,39 +2367,47 @@ $colorH4: #1C2752;
     display: flex;
     justify-content: center;
   }
-  .meet-us-form {
-    display: flex;
-    flex-direction: column;
-    padding: 40px 10px; 
-    background-color: #F4F4F4;
 
-    input {
-      margin-bottom: 25px;
-      padding: 10px 24px;
+  .meet-us {
+    max-width: 564px;
+    padding-inline: 10px;
+    .meet-us-minilogo {
+      @include minilogos();
     }
-   
-    textarea {
-        max-height: 150px;
-        min-height: 150px;
-        max-width: 90%;
+    .meet-us-form {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 15px; 
+      background-color: #F4F4F4;
+  
+      input {
         margin-bottom: 25px;
-        padding: 10px 24px;
-    }
-    textarea::placeholder {
-      font-family: sans-serif;
-    }
-
-    button {
-      padding-block: 20px;
-      background-color: $colorbg;
-      border: none;
-      cursor: pointer;
-      font-size: 17px;
-      line-height: 27px;
-      color: $colorH4;
+        padding: 10px 30px;
+      }
+     
+      textarea {
+          max-height: 150px;
+          min-height: 150px;
+          max-width: 90%;
+          margin-bottom: 25px;
+          padding: 10px 24px;
+      }
+      textarea::placeholder {
+        font-family: sans-serif;
+      }
+  
+      button {
+        padding-block: 15px;
+        background-color: $colorbg;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 27px;
+        color: $colorH4;
+      }
     }
   }
- }
+}
 
 
 @media (max-width: 525px) {
@@ -2547,7 +2581,7 @@ $colorH4: #1C2752;
 @media (max-width: 480px) {
   .meet-us {
     max-width: 564px;
-    margin-inline: 15px;
+    margin-inline: 0px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -2559,7 +2593,7 @@ $colorH4: #1C2752;
     .meet-us-form {
       display: flex;
       flex-direction: column;
-      padding: 55.5px 10opx; 
+      padding: 55.5px 10px; 
       background-color: #F4F4F4;
     }
   }
@@ -2594,4 +2628,46 @@ $colorH4: #1C2752;
     margin-inline: 0px;
   }
 
+}
+
+@media (max-width: 380px) {
+  .meet-us {
+    max-width: 564px;
+    padding-inline: 10px;
+    .meet-us-minilogo {
+      @include minilogos();
+    }
+    .meet-us-form {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 10px; 
+      background-color: #F4F4F4;
+  
+      input {
+        margin-bottom: 25px;
+        padding: 10px 30px;
+      }
+     
+      textarea {
+          max-height: 150px;
+          min-height: 150px;
+          max-width: 90%;
+          margin-bottom: 25px;
+          padding: 5px 15px;
+      }
+      textarea::placeholder {
+        font-family: sans-serif;
+      }
+  
+      button {
+        padding-block: 10px;
+        background-color: $colorbg;
+        border: none;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 27px;
+        color: $colorH4;
+      }
+    }
+  }
 }
