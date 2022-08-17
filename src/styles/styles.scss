@@ -1059,6 +1059,7 @@ $colorH4: #1C2752;
   .stay-updated-card {
     max-width: 580px;
     padding: 15px;
+    
     h2 {
       font-size: 30px;
       line-height: 42px;
@@ -1289,8 +1290,59 @@ $colorH4: #1C2752;
       font-size: 16px;
     }
   }
+}
+.stay-updated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
 
+.stay-updated-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  .stay-updated-card {
+    max-width: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+
+    .stay-updated-card-img {
+        width: 490px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      color: $colorH4;
+    }
+    p {
+      font-size: 17px;
+      line-height: 27px;
+      color: $colorP;
+    }
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      color: $colorH4;
+      text-decoration: none;
+    }
   }
+}
+
+ h1 {
+  font-size: 45px;
+  line-height: 58px;
+  color: $colorH4;
+ }
+
+}
   
 }
 
@@ -1712,6 +1764,59 @@ $colorH4: #1C2752;
     }
   }
 }
+
+.stay-updated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+.stay-updated-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  .stay-updated-card {
+    max-width: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+
+    .stay-updated-card-img {
+        width: 430px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      color: $colorH4;
+    }
+    p {
+      font-size: 17px;
+      line-height: 27px;
+      color: $colorP;
+    }
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      color: $colorH4;
+      text-decoration: none;
+    }
+  }
+}
+
+ h1 {
+  font-size: 45px;
+  line-height: 58px;
+  color: $colorH4;
+ }
+
+}
 }
 
 @media (max-width: 984px) {
@@ -1905,6 +2010,61 @@ $colorH4: #1C2752;
         margin-right: 10px;
       }
     }
+  }
+}
+
+@media (max-width: 940px) {
+  .stay-updated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  
+  .stay-updated-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+  
+    .stay-updated-card {
+      max-width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px;
+  
+      .stay-updated-card-img {
+          width: 400px;
+      }
+      
+      h2 {
+        font-size: 30px;
+        line-height: 30px;
+        color: $colorH4;
+      }
+      p {
+        font-size: 16px;
+        line-height: 27px;
+        color: $colorP;
+      }
+      a {
+        font-size: 18px;
+        line-height: 30px;
+        color: $colorH4;
+        text-decoration: none;
+      }
+    }
+  }
+  
+   h1 {
+    font-size: 45px;
+    line-height: 58px;
+    color: $colorH4;
+   }
+  
   }
 }
 
@@ -2116,6 +2276,12 @@ $colorH4: #1C2752;
    }
   }
  } 
+
+ .gallery {
+    h1 {
+      font-size: 35px;
+    }
+ }
  .clients {
   padding-top: 110px;
   display: flex;
@@ -2176,7 +2342,7 @@ $colorH4: #1C2752;
     align-items: center;
     max-width: 497px;
     h1 {
-      font-size: 45px;
+      font-size: 35px;
       line-height: 58px;
       color: $colorH4;
     }
@@ -2216,6 +2382,59 @@ $colorH4: #1C2752;
     padding-bottom: 38px;
   }
  } 
+}
+.stay-updated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+.stay-updated-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .stay-updated-card {
+    max-width: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+
+    .stay-updated-card-img {
+        width: 490px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      color: $colorH4;
+    }
+    p {
+      font-size: 17px;
+      line-height: 27px;
+      color: $colorP;
+    }
+    a {
+      font-size: 20px;
+      line-height: 30px;
+      color: $colorH4;
+      text-decoration: none;
+    }
+  }
+}
+
+ h1 {
+  font-size: 35px;
+  line-height: 58px;
+  color: $colorH4;
+ }
+
 }
   
 }
@@ -3076,6 +3295,9 @@ $colorH4: #1C2752;
       }
     }
   }
+  .price-plan {
+    padding-bottom: 70px;
+  }
   .price-plan-footer {
     display: flex;
     align-items: center;
@@ -3104,6 +3326,60 @@ $colorH4: #1C2752;
         margin-right: 10px;
       }
     }
+  }
+  .stay-updated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 150px;
+    padding-inline: 10px;
+  
+  .stay-updated-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+    .stay-updated-card {
+      max-width: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-inline: 0px;
+      margin-bottom: 20px;
+  
+      .stay-updated-card-img {
+          width: 430px;
+      }
+      
+      h2 {
+        font-size: 30px;
+        line-height: 40px;
+        color: $colorH4;
+      }
+      p {
+        font-size: 17px;
+        line-height: 27px;
+        color: $colorP;
+      }
+      a {
+        font-size: 17px;
+        line-height: 30px;
+        color: $colorH4;
+        text-decoration: none;
+      }
+    }
+  }
+  
+   h1 {
+    font-size: 35px;
+    line-height: 58px;
+    color: $colorH4;
+   }
+  
   }
 }
 
@@ -3182,7 +3458,60 @@ $colorH4: #1C2752;
     }
     
   }
-
+  .stay-updated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 150px;
+    padding-inline: 10px;
+  
+  .stay-updated-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+    .stay-updated-card {
+      max-width: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-inline: 0px;
+      margin-bottom: 20px;
+  
+      .stay-updated-card-img {
+          width: 370px;
+      }
+      
+      h2 {
+        font-size: 30px;
+        line-height: 40px;
+        color: $colorH4;
+      }
+      p {
+        font-size: 17px;
+        line-height: 27px;
+        color: $colorP;
+      }
+      a {
+        font-size: 17px;
+        line-height: 30px;
+        color: $colorH4;
+        text-decoration: none;
+      }
+    }
+  }
+  
+   h1 {
+    font-size: 35px;
+    line-height: 58px;
+    color: $colorH4;
+   }
+  
+  }
 }
 
 @media (max-width: 380px) {
@@ -3224,5 +3553,59 @@ $colorH4: #1C2752;
         color: $colorH4;
       }
     }
+  }
+  .stay-updated {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 150px;
+    padding-inline: 10px;
+  
+  .stay-updated-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  
+    .stay-updated-card {
+      max-width: 430px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-inline: 0px;
+      margin-bottom: 20px;
+  
+      .stay-updated-card-img {
+          width: 360px;
+      }
+      
+      h2 {
+        font-size: 30px;
+        line-height: 40px;
+        color: $colorH4;
+      }
+      p {
+        font-size: 17px;
+        line-height: 27px;
+        color: $colorP;
+      }
+      a {
+        font-size: 17px;
+        line-height: 30px;
+        color: $colorH4;
+        text-decoration: none;
+      }
+    }
+  }
+  
+   h1 {
+    font-size: 35px;
+    line-height: 58px;
+    color: $colorH4;
+   }
+  
   }
 }

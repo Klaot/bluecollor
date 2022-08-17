@@ -18,8 +18,8 @@ import './styles/styles.scss';
 function App() {
   return (
     <div className="App">
-        <Navigation />
-        <Header />
+        {/* <Navigation />
+        <Header /> */}
         <AboutUs/>
         <WhatWeOffer/>
         <OurServices/>
@@ -29,8 +29,8 @@ function App() {
         <Clients/>
         <PricePlan/>
         <StayUpdated/>
-        <Subscribe/>
-        <Footer/>
+        {/* <Subscribe/>
+        <Footer/> */}
     </div>
   );
 }

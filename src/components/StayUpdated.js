@@ -17,7 +17,7 @@ const StayUpdated = () => {
             </div>
             <div className='stay-updated-cards'>
                 <div className='stay-updated-card'>
-                    <img src={StayUpdated1} alt='StayUpdated1 img'/>
+                    <img className='stay-updated-card-img' src={StayUpdated1} alt='StayUpdated1 img'/>
                     <div className='stay-updated-card-user'>
                         <div className='stay-updated-user-info active-update'>
                             <img src={ManImg} alt='ManImg icon'/>
@@ -35,7 +35,7 @@ const StayUpdated = () => {
                     <a href='#'>View More</a>
                 </div>
                 <div className='stay-updated-card'>
-                    <img src={StayUpdated2} alt='StayUpdated2 img'/>
+                    <img className='stay-updated-card-img' src={StayUpdated2} alt='StayUpdated2 img'/>
                     <div className='stay-updated-card-user'>
                         <div className='stay-updated-user-info active-update'>
                             <img src={ManImg} alt='ManImg icon'/>
