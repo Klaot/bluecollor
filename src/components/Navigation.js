@@ -4,8 +4,9 @@ import Social1 from '../image/social1.png';
 import Social2 from '../image/social2.png';
 import Social3 from '../image/social3.png';
 import Social4 from '../image/social4.png';
-import Mail from '../image/mail.png';
-import Phone from '../image/phone.png';
+import Mail from '../image/mailfooter.png';
+import Phone from '../image/phonefooter.png';
+
 
 
 const Navigation = () => {
@@ -28,27 +29,22 @@ const Navigation = () => {
                     <img src={Logo} alt='logo'/>
                     <div className='mail-and-phone'>
                         <div className='mail'>
-                            <div className='mail-img'>
-                                <img src={Mail} alt='mail'/>
-                            </div>
+                            <img src={Mail} alt='mail'/>
                             <div>
                                 <h3>Mail Us</h3>
                                 <p>Info@bluecollar.com</p>
                             </div>
                         </div>
                         <div className='phone'>
-                            <div className='phone-img'>
-                                <img src={Phone} alt='mail'/>
-                            </div>     
+                            <img src={Phone} alt='mail'/> 
                             <div>
                                 <h3>Call Us</h3>
                                 <p>+01 569 896 654</p>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
-                <div className='nav-bg'>
+                {/* <div className='nav-bg'>
                     <nav className='nav'>
                         <div className='nav-link'>
                             <a href='#'>Home</a>
@@ -59,7 +55,7 @@ const Navigation = () => {
                         </div>
                         <button className='nav-btn'>Have Any Questions?</button>
                     </nav>
-                </div>
+                </div> */}
             </div>     
         </section>
     )

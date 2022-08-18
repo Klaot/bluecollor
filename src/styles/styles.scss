@@ -94,15 +94,7 @@ $colorH4: #1C2752;
         display: flex;
         align-items: center;
         margin-right: 60px;
-
-        .mail-img {
-          width: 68px;
-          height: 68px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 100px;
-          background: $colorbg;
+        img {
           margin-right: 15px;
         }
 
@@ -117,15 +109,7 @@ $colorH4: #1C2752;
       .phone {
         display: flex;
         align-items: center;
-
-        .phone-img {
-          width: 68px;
-          height: 68px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 100px;
-          background: $colorbg;
+        img {
           margin-right: 15px;
         }
         h3 {
@@ -184,6 +168,8 @@ $colorH4: #1C2752;
   padding-block: 270px;
   background-image: url('../image/walpapper.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   .gear-and-p {
     display: flex;
@@ -1604,6 +1590,85 @@ $colorH4: #1C2752;
 }
 
 @media (max-width: 1044px) { 
+
+  .navigation {
+    max-width: 100%;
+    margin: auto;
+    background-color: #F2F2F2;
+    
+    .social-all {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-inline: 120px;
+     background-color: #F2F2F2;
+ 
+     h4 {
+       color: $colorH4;
+     }
+ 
+     .social{
+       a:nth-child(1) {
+           margin-inline: 18px;
+         }
+       a:nth-child(2) {
+         margin-inline: 18px;
+       }
+       a:nth-child(3) {
+         margin-inline: 18px;
+       }
+       a:nth-child(4) {
+         margin-inline: 18px 0px;
+       }
+     }
+    }
+ 
+    .logo {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #fff;
+     padding-block: 30px;
+     padding-inline: 120px;
+ 
+     .mail-and-phone {
+       display: flex;
+       flex-direction: row;
+ 
+       .mail {
+         display: flex;
+         align-items: center;
+         margin-right: 10px;
+         img {
+           margin-right: 15px;
+         }
+ 
+         h3 {
+           margin: 0;
+         }
+         p {
+           margin: 0;
+           color: $colorP;
+         }
+       }
+       .phone {
+         display: flex;
+         align-items: center;
+         img {
+           margin-right: 15px;
+         }
+         h3 {
+           margin: 0;
+         }
+         p {
+           margin: 0;
+           color: $colorP;
+         }
+       }
+     }
+    }
+  } 
+
   .clients {
     padding-top: 110px;
     display: flex;
@@ -2011,9 +2076,145 @@ $colorH4: #1C2752;
       }
     }
   }
+  .subscribe {
+    background-color: $colorbg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 61px;
+    padding-bottom: 52px;
+  
+    .subscribe-info {
+      max-width: 510px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 35px;
+      line-height: 48px;
+      color: $colorH4;
+    }
+    p {
+      font-size: 16px;
+      line-height: 27px;
+      color: $colorH4;
+    }
+  
+    .subscribe-form {
+      margin-top: 15px;
+      input {
+        padding: 20px;
+        border: 2px solid #fff;
+        max-width: 400px;
+        font-size: 17px;
+        line-height: 27px;
+        background: transparent;
+        color: #1C2752;
+
+      }
+      input:focus {
+        outline-color: #7E7E7E;
+        outline-offset: 0;
+      }
+      button {
+        background-color: #fff;
+        color: #1C2752;
+        font-size: 17px;
+        line-height: 27px;
+        padding: 22px 50px;
+        border: none;
+      }
+    }
+  }
 }
 
 @media (max-width: 940px) {
+
+  .navigation {
+    max-width: 100%;
+    margin: auto;
+    background-color: #F2F2F2;
+    
+    .social-all {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-inline: 120px;
+     background-color: #F2F2F2;
+ 
+     h4 {
+       color: $colorH4;
+     }
+ 
+     .social{
+       a:nth-child(1) {
+           margin-inline: 18px;
+         }
+       a:nth-child(2) {
+         margin-inline: 18px;
+       }
+       a:nth-child(3) {
+         margin-inline: 18px;
+       }
+       a:nth-child(4) {
+         margin-inline: 18px 0px;
+       }
+     }
+    }
+ 
+    .logo {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #fff;
+     padding-block: 10px;
+     padding-inline: 120px 87px;
+ 
+     .mail-and-phone {
+       display: flex;
+       flex-direction: column;
+       padding-left: 35px;
+ 
+       .mail {
+         display: flex;
+         align-items: center;
+         margin-right: 10px;
+         img {
+           margin-right: 15px;
+           width: 50px;
+         }
+ 
+         h3 {
+           margin: 0;
+         }
+         p {
+           margin: 0;
+           color: $colorP;
+         }
+       }
+       .phone {
+         display: flex;
+         align-items: center;
+         margin-top: 10px;
+         img {
+           margin-right: 15px;
+           width: 50px;
+         }
+         h3 {
+           margin: 0;
+         }
+         p {
+           margin: 0;
+           color: $colorP;
+         }
+       }
+     }
+    }
+  } 
   .stay-updated {
     display: flex;
     align-items: center;
@@ -2065,6 +2266,66 @@ $colorH4: #1C2752;
     color: $colorH4;
    }
   
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -35px;
+    padding-block: 270px;
+    background-image: url('../image/walpapper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-inline: 10px;
+  
+    .gear-and-p {
+      display: flex;
+      align-items: center;
+      padding-inline: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 0px;
+      max-width: 662px;
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        color: #fff;
+        margin: 2px;
+      }
+      img {
+        margin-inline: 0px 10px;
+      }
+    }
+  
+    .header-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-inline: 0px;
+      h1 {
+        max-width: 662px;
+        font-size: 60px;
+        line-height: 78px;
+        color: #fff;
+        margin-block: 30px;
+      }
+      .header-btn {
+        background: $colorbg;
+        padding: 19px 42px 19px 42px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1C2752;
+        border: 2px solid #FFB342;
+        cursor: pointer;
+      }
+      .header-btn:hover {
+        background: #ffb342af;
+      }
+    }
   }
 }
 
@@ -2569,6 +2830,86 @@ $colorH4: #1C2752;
 
 @media (max-width: 704px) {
 
+  .navigation {
+    max-width: 100%;
+    margin: auto;
+    background-color: #F2F2F2;
+    .social-all {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     padding-inline: 0px;
+     background-color: #F2F2F2;
+ 
+     h4 {
+       color: $colorH4;
+     }
+ 
+     .social{
+       a:nth-child(1) {
+           margin-inline: 18px;
+         }
+       a:nth-child(2) {
+         margin-inline: 18px;
+       }
+       a:nth-child(3) {
+         margin-inline: 18px;
+       }
+       a:nth-child(4) {
+         margin-inline: 18px 0px;
+       }
+     }
+    }
+ 
+    .logo {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     background-color: #fff;
+     padding-block: 10px;
+     padding-inline: 0px;
+ 
+     .mail-and-phone {
+       display: flex;
+       flex-direction: column;
+       padding-left: 0px;
+ 
+       .mail {
+         display: flex;
+         align-items: center;
+         margin-right: 0px;
+         img {
+           margin-right: 15px;
+           width: 50px;
+         }
+ 
+         h3 {
+           margin: 0;
+         }
+         p {
+           margin: 0;
+           color: $colorP;
+         }
+       }
+       .phone {
+         display: flex;
+         align-items: center;
+         margin-top: 10px;
+         img {
+           margin-right: 15px;
+           width: 50px;
+         }
+         h3 {
+           margin: 0;
+         }
+         p {
+           margin: 0;
+           color: $colorP;
+         }
+       }
+     }
+    }
+  } 
   .about-us {
     align-items: stretch;
     margin-block: 140px;
@@ -2889,29 +3230,67 @@ $colorH4: #1C2752;
       }
     }
   }
-}
-  .what-we-offer__viewImg {
-    img {
-       max-width: 290px;
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -35px;
+    padding-block: 270px;
+    background-image: url('../image/walpapper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-inline: 10px;
+  
+    .gear-and-p {
+      display: flex;
+      align-items: center;
+      padding-inline: 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 0px;
+      max-width: 662px;
+      p {
+        font-size: 18px;
+        line-height: 27px;
+        color: #fff;
+        margin: 2px;
+      }
+      img {
+        margin-inline: 0px 10px;
+      }
+    }
+  
+    .header-info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      margin-inline: 0px;
+      h1 {
+        max-width: 662px;
+        font-size: 45px;
+        line-height: 78px;
+        color: #fff;
+        margin-block: 30px;
+      }
+      .header-btn {
+        background: $colorbg;
+        padding: 19px 42px 19px 42px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #1C2752;
+        border: 2px solid #FFB342;
+        cursor: pointer;
+      }
+      .header-btn:hover {
+        background: #ffb342af;
+      }
     }
   }
-
-  .ViewComercial {
-    max-width: 1160px;
-    background: #fff;
-    display: flex;
-    padding: 30px 40px;
-    margin-top: 40px;
-
-    p {
-      font-size: 14px;
-    }
-    button {
-      font-size: 18px;
-      padding: 15px 30px;
-    }
- }
- 
+}
 
 
 @media (max-width: 551px) {
@@ -3510,7 +3889,61 @@ $colorH4: #1C2752;
     line-height: 58px;
     color: $colorH4;
    }
+  }
+  .subscribe {
+    background-color: $colorbg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 61px;
+    padding-bottom: 52px;
+    padding-inline: 10px;
   
+    .subscribe-info {
+      max-width: 510px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    h1 {
+      font-size: 35px;
+      line-height: 48px;
+      color: $colorH4;
+    }
+    p {
+      font-size: 16px;
+      line-height: 27px;
+      color: $colorH4;
+    }
+  
+    .subscribe-form {
+      margin-top: 15px;
+      input {
+        padding: 10px;
+        border: 2px solid #fff;
+        max-width: 400px;
+        font-size: 14px;
+        line-height: 20px;
+        background: transparent;
+        color: #1C2752;
+
+      }
+      input:focus {
+        outline-color: #7E7E7E;
+        outline-offset: 0;
+      }
+      button {
+        background-color: #fff;
+        color: #1C2752;
+        font-size: 15px;
+        line-height: 17px;
+        padding: 13.5px 30px;
+        border: none;
+      }
+    }
   }
 }
 
