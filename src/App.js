@@ -27,8 +27,8 @@ function App() {
         <TheGallery/>
         <Testimonial/>
         <Clients/>
-        <PricePlan/>
-        <StayUpdated/>
+        <PricePlan/> 
+        <StayUpdated/> 
         <Subscribe/>
         <Footer/>
     </div>

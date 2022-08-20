@@ -14,6 +14,7 @@ const Footer = () => {
                 <div>
                     <img className='footer-info-header-logofooter' src={LogoFooter} alt='logo'/>
                 </div>
+                <div className='footer-info-header-conect'>
                 <div className='footer-info-header-blocks'>
                     <img src={MailFooter} alt='MailFooter icon'/>
                     <div>
@@ -35,6 +36,7 @@ const Footer = () => {
                         <p>Amsterdam, 109-74</p>
                     </div>
                 </div>
+            </div>   
             </div>
             <div className='footer-social-all'>
                 <div className='footer-social'>

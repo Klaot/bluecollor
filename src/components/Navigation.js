@@ -44,7 +44,7 @@ const Navigation = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className='nav-bg'>
+                <div className='nav-bg'>
                     <nav className='nav'>
                         <div className='nav-link'>
                             <a href='#'>Home</a>
@@ -55,7 +55,7 @@ const Navigation = () => {
                         </div>
                         <button className='nav-btn'>Have Any Questions?</button>
                     </nav>
-                </div> */}
+                </div>
             </div>     
         </section>
     )
