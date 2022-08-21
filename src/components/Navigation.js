@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Logo from '../image/logo.png';
 import Social1 from '../image/social1.png';
 import Social2 from '../image/social2.png';
@@ -10,6 +11,12 @@ import Phone from '../image/phonefooter.png';
 
 
 const Navigation = () => {
+
+    const [viewMenu, setViewMenu] = useState(false);
+    const showMenu = () => {
+        setViewMenu(!viewMenu);
+    };
+
     return (
         <section className='container'>
             <div className='navigation'>
@@ -53,8 +60,20 @@ const Navigation = () => {
                             <a href='#'>Blog</a>
                             <a href='#'>Contact Us</a>
                         </div>
+                        <button className={viewMenu ? 'nav-btn-view active-nav-menu' : 'nav-btn-view'} onClick={showMenu}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                         <button className='nav-btn'>Have Any Questions?</button>
                     </nav>
+                    <div className={viewMenu ? 'nav-link2 active-nav-link2' : 'nav-link2'}>
+                        <a href='#'>Home</a>
+                        <a href='#'>About Us</a>
+                        <a href='#'>Pages</a>
+                        <a href='#'>Blog</a>
+                        <a href='#'>Contact Us</a>
+                    </div>
                 </div>
             </div>     
         </section>

@@ -46,6 +46,43 @@ $colorH4: #1C2752;
   
 // Navigation
 
+.nav-btn-view {
+  display: none;
+  transform-origin: 16px 11px;
+  float: left;
+  margin-right: 29px;
+  outline: 0;
+  border: 0;
+  padding: 12px;
+  background: none;
+
+  span {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 7px;
+    background-color: #fff;
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  &.active-nav-menu {
+    span:nth-of-type(1) {
+      transform: rotate(45deg) translate(10px, 10px);
+      width: 40px;
+    }
+
+    span:nth-of-type(2) {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    span:nth-of-type(3) {
+      transform: rotate(-45deg) translate(7px, -7px);
+      width: 40px;
+    }
+  }
+}
+
 .navigation {
    max-width: 100%;
    margin: auto;
@@ -57,6 +94,8 @@ $colorH4: #1C2752;
     justify-content: space-between;
     padding-inline: 120px;
     background-color: #F2F2F2;
+    position: relative;
+    z-index: 1001;
 
     h4 {
       color: $colorH4;
@@ -77,6 +116,8 @@ $colorH4: #1C2752;
     background-color: #fff;
     padding-block: 30px;
     padding-inline: 120px;
+    position: relative;
+    z-index: 1001;
 
     .mail-and-phone {
       display: flex;
@@ -118,6 +159,24 @@ $colorH4: #1C2752;
 
    .nav-bg {
     background: #fff;
+    .nav-link2 {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      background-color: #FFB342;
+      position: relative;
+      z-index: 1000;
+      transform: translateY(-200%);
+      
+      a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 18px;
+      }
+    }
    }
    .nav {
     display: flex;
@@ -142,6 +201,7 @@ $colorH4: #1C2752;
       align-items: center;
       justify-content: space-around;
     }
+    
     .nav-btn:hover {
       background:#454e75;
     }
@@ -2867,7 +2927,7 @@ $colorH4: #1C2752;
   .nav-btn {
     display: none;
   }
-
+  
   // whatweofers
   .what-we-offer {
     background: $colorbg;
@@ -3710,8 +3770,6 @@ $colorH4: #1C2752;
 
 @media (max-width: 525px) {
 
-  
-
   .about-us {
     align-items: stretch;
     margin-block: 140px;
@@ -3970,6 +4028,12 @@ $colorH4: #1C2752;
     max-width: 100%;
     margin: auto;
     background-color: #F2F2F2;
+    .nav-bg {
+     .active-nav-link2 {
+      display: flex;
+      transform: translateY(0%);
+     }
+    }
     .social-all {
      display: flex;
      align-items: center;
@@ -4034,7 +4098,15 @@ $colorH4: #1C2752;
        }
      }
     }
+   .nav {
+    .nav-link {
+      display: none;
+    }
+   }
   } 
+  .nav-btn-view  {
+    display: block;
+  }
 
   .meet-us {
     max-width: 564px;
