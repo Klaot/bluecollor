@@ -67,18 +67,6 @@ $colorH4: #1C2752;
       align-items: center;
       justify-content: space-between;
       width: 200px;
-      // a:nth-child(1) {
-      //     margin-inline: 18px;
-      //   }
-      // a:nth-child(2) {
-      //   margin-inline: 18px;
-      // }
-      // a:nth-child(3) {
-      //   margin-inline: 18px;
-      // }
-      // a:nth-child(4) {
-      //   margin-inline: 18px 0px;
-      // }
     }
    }
 
@@ -126,6 +114,8 @@ $colorH4: #1C2752;
       }
     }
    } 
+
+
    .nav-bg {
     background: #fff;
    }
@@ -146,6 +136,12 @@ $colorH4: #1C2752;
       border: none;
       cursor: pointer;
     }
+    .nav-link {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
     .nav-btn:hover {
       background:#454e75;
     }
@@ -154,7 +150,6 @@ $colorH4: #1C2752;
       line-height: 30px;
       color: #222222;
       text-decoration: none;
-      margin-inline: 45px;
     }
 
     .nav-link a:hover {
@@ -2869,6 +2864,10 @@ $colorH4: #1C2752;
 
 @media (max-width: 825px) {
 
+  .nav-btn {
+    display: none;
+  }
+
   // whatweofers
   .what-we-offer {
     background: $colorbg;
@@ -3012,20 +3011,7 @@ $colorH4: #1C2752;
        color: $colorH4;
      }
  
-     .social{
-      //  a:nth-child(1) {
-      //      margin-inline: 18px;
-      //    }
-      //  a:nth-child(2) {
-      //    margin-inline: 18px;
-      //  }
-      //  a:nth-child(3) {
-      //    margin-inline: 18px;
-      //  }
-      //  a:nth-child(4) {
-      //    margin-inline: 18px 0px;
-      //  }
-     }
+     
     }
  
     .logo {
@@ -3257,10 +3243,42 @@ $colorH4: #1C2752;
   display: flex;
   justify-content: center;
 }
+.footer {
+  background-color: $colorH4;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .footer-info-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: 1px solid #7E7E7E;
+    .footer-info-header-conect {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+  }
+  .footer-social-all {
+    display: none;
+   
+  }
+}
 }
 
 
 @media (max-width: 670px) {
+  
+  .navigation {
+    .nav {
+    margin-inline: 0px;
+  }
+  }
+  
 
   .about-us {
     align-items: stretch;
